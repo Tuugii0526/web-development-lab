@@ -1,26 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="mn">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Миний Товч CV</title>
-</head>
-<body>
- <h1>Нэр: Намжилдорж Төгөлдөр</h1>
- <!-- Товч танилцуулга -->
- <p>Мэдээллийн технологийн сургуулийн 3-р суралцагч. Вэб хөгжүүлэлт болон шинэ
-технологиудыг сонирхон судалдаг.</p>
- <h2>Эзэмшсэн чадварууд</h2>
- <!-- Жагсаалт -->
- <ul>
- <li>HTML5 & CSS3 үндэс</li>
- <li>Git & GitHub хувилбар удирдлага</li>
- <li>Программчлалын С++ хэл</li>
- </ul>
- <h2>Холбоо барих</h2>
- <!-- Холбоос -->
- <p>Миний GitHub профайлтай танилцах:
- <a href="https://github.com/Tuugii0526" target="_blank">GitHub Холбоос</a>
- </p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tuguldurn@lab1:~$</title>
+  </head>
+  <body>
+    <header>
+      <pre><kbd>tuguldurn@lab1:~$ whoami</kbd>
+<samp>Намжилдорж Төгөлдөр</samp>
+<kbd>tuguldurn@lab1:~$ ls ~</kbd>
+<samp>about/  skills/  favorites/  faq/  contact/</samp></pre>
+      <nav aria-label="Хуудасны цэс">
+        <kbd>$ cd</kbd>
+        <a href="#about">~/about</a> ·
+        <a href="#skills">~/skills</a> ·
+        <a href="#favorites">~/favorites</a> ·
+        <a href="#faq">~/faq</a> ·
+        <a href="#contact">~/contact</a>
+      </nav>
+      <hr />
+    </header>
+
+    <main>
+      <section id="about">
+        <h1>Сайн уу 👋</h1>
+        <pre><kbd>$ cat about.txt</kbd></pre>
+        <p>
+          Намайг <strong>Намжилдорж Төгөлдөр</strong> гэдэг. Мэдээллийн
+          технологийн сургуульд <mark>3-р курст</mark> сурдаг. Шинэ зүйл
+          суралцах, бусдад сурсан мэдсэнээ хуваалцах дуртай 😇. Танилцахад
+          таатай байна. ✨
+        </p>
+
+        <pre><kbd>$ fortune</kbd></pre>
+        <blockquote>
+          <p>“Оролдлого ихт оройд нь”</p>
+        </blockquote>
+
+        <pre><kbd>$ cat /etc/tuguldurn.conf</kbd>
+<samp>name    = Намжилдорж Төгөлдөр
+school  = Мэдээллийн технологийн сургууль
+year    = 3
+likes   = Шинийг турших</samp></pre>
+      </section>
+
+      <hr />
+
+      <section id="skills">
+        <h2>🧰 Юу мэддэг вэ?</h2>
+        <pre><kbd>$ ls -l skills/</kbd>
+<samp>-rwxr-xr-x  html_css
+-rwxr-xr-x  git_github
+-rwxr-xr-x  cpp</samp></pre>
+        <details>
+          <summary><kbd>$ ./html_css --level</kbd></summary>
+          <p><samp>6 / 10 ➜ [######----]</samp></p>
+          <label
+            >Өөртөө өгөх дүн:
+            <meter min="0" max="10" value="6">6/10</meter>
+          </label>
+        </details>
+
+        <details>
+          <summary><kbd>$ ./git_github --level</kbd></summary>
+          <p>
+            <samp
+              >Кодоо байршуулахад ашигладаг.
+              <mark>GitHub Pages</mark> дээр кодоо үнэгүй байршуулдаг болохоор
+              гоё санагддаг.</samp
+            >
+          </p>
+          <p><samp>6 / 10 ➜ [######----]</samp></p>
+          <label
+            >Өөртөө өгөх дүн:
+            <meter min="0" max="10" value="6">6/10</meter>
+          </label>
+        </details>
+
+        <details>
+          <summary><kbd>$ ./cpp --level</kbd></summary>
+          <p>
+            <samp
+              >Програмчлалын бодлого бодох дуртай. Шинэ бүтэц, алгоритмаар
+              асуудал шийдэх нь сонирхолтой санагддаг.</samp
+            >
+          </p>
+          <p><samp>6 / 10 ➜ [######----]</samp></p>
+          <label
+            >Өөртөө өгөх дүн:
+            <meter min="0" max="10" value="6">6/10</meter>
+          </label>
+        </details>
+      </section>
+
+      <hr />
+
+      <section id="favorites">
+        <h2>⭐ Дуртай зүйлс</h2>
+        <pre><kbd>$ cat hello.cpp</kbd>
+<samp>#include &lt;iostream&gt;
+int main() {
+  std::cout &lt;&lt; "Hello world";
+}</samp>
+<kbd>$ g++ hello.cpp -o hello &amp;&amp; ./hello</kbd>
+<samp>Hello world</samp></pre>
+        <p>Дуртай хэл: <strong>C++</strong></p>
+
+        <pre><kbd>$ ls ~/favorites/*</kbd>
+<samp>frameworks/:  React  Vue  Next.js  Nuxt
+security/:    CTF</samp></pre>
+        <pre><kbd>$ grep -ri "дуртай" ~/</kbd>
+<samp>favorites/frameworks: React · Vue · Next.js · Nuxt
+favorites/security:   CTF тэмцээн</samp></pre>
+      </section>
+
+      <hr />
+
+      <section id="faq">
+        <h2>💬 Асуулт хариулт</h2>
+
+        <details>
+          <summary><kbd>$ man web</kbd> — Яагаад вэб хөгжүүлэлт сонирхдог вэ?</summary>
+          <p>
+            <samp
+              >Код бичээд хөтөч дээр үр дүнг нь шууд харж болдог нь надад
+              таалагддаг.</samp
+            >
+          </p>
+        </details>
+
+        <details>
+          <summary><kbd>$ ps aux | grep learning</kbd> — Одоо юу сурч байна вэ?</summary>
+          <p>
+            <samp
+              >Япон хэл <strong>dekiru nihongo</strong> номноос сурж байгаа.
+              Ирэх 12 сард N5 шалгалт өгнө.</samp
+            >
+          </p>
+          <pre><kbd>$ crontab -l</kbd>
+<samp>0 9 * 12 *  ./nihongo_n5_exam   # 12 сард</samp></pre>
+        </details>
+
+        <details>
+          <summary><kbd>$ cat goals.txt</kbd> — Ойрын зорилго</summary>
+          <p>
+            <samp>OverTheWire-ийн CTF дасгалуудыг шийдэх зорилготой.</samp>
+          </p>
+          <pre><kbd>$ ssh bandit0@bandit.labs.overthewire.org -p 2220</kbd></pre>
+        </details>
+      </section>
+
+      <hr />
+
+      <section id="contact">
+        <h2>📬 Холбоо барих</h2>
+        <pre><kbd>$ git remote -v</kbd>
+<samp>origin  <a href="https://github.com/Tuugii0526" target="_blank" rel="noopener">https://github.com/Tuugii0526</a> (fetch)</samp></pre>
+        <p>Хийсэн ажлуудыг маань GitHub дээрээс харж болно.</p>
+
+        <form onsubmit="return false;">
+          <fieldset>
+            <legend><kbd>$ echo "..." | mail tuguldurn</kbd></legend>
+            <p>
+              <label>Нэр: <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label
+                >Захиа:<br /><textarea
+                  name="msg"
+                  rows="3"
+                  cols="30"
+                ></textarea>
+              </label>
+            </p>
+            <button type="submit">Явуулах</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <pre><kbd>$ exit</kbd>
+<samp>logout</samp></pre>
+      <p>
+        <small
+          >© 2026 Намжилдорж Төгөлдөр · <a href="#about">cd ~ ↑ дээш гарах</a></small
+        >
+      </p>
+    </footer>
+  </body>
 </html>
